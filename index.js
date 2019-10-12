@@ -50,14 +50,20 @@
       chosenPoke.src = fire();
       ballDiv.insertBefore(chosenPoke, ballDiv.firstChild);
       ballDiv.removeChild(ballDiv.children[1]);
+      document.getElementById("grass").removeEventListener("click", choose);
+      document.getElementById("water").removeEventListener("click", choose);
     } else if (type == "grass") {
       chosenPoke.src = grass();
       ballDiv.insertBefore(chosenPoke, ballDiv.children[1]);
       ballDiv.removeChild(ballDiv.children[2]);
+      document.getElementById("fire").removeEventListener("click", choose);
+      document.getElementById("water").removeEventListener("click", choose);
     } else {
       chosenPoke.src = water();
       ballDiv.appendChild(chosenPoke);
       ballDiv.removeChild(ballDiv.children[2]);
+      document.getElementById("fire").removeEventListener("click", choose);
+      document.getElementById("grass").removeEventListener("click", choose);
     }
     chosenPoke.alt = "Your starter Pokémon!";
   }
