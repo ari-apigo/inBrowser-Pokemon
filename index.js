@@ -10,11 +10,9 @@
 
   window.addEventListener("load", init);
 
-  // let startBtn = document.getElementById("start");
-
   function init() {
     document.getElementById("start").addEventListener("click", start);
-    document.getElementsByClassName("next").addEventListener("click", next);
+    document.getElementById("next").addEventListener("click", next);
   }
 
   function start() {
@@ -26,11 +24,19 @@
         portal[i].classList.add("hidden");
       }
     }
+    let body = document.querySelector("body");
+    body.classList.add("home");
   }
 
   function next() {
-    let dialogue = document.querySelectorAll(".speech");
-    
+    let stages = document.querySelectorAll("article");
+    for (let i=0; i<stages.length; i++) {
+      if (stages[i].classList.contains("hidden")) {
+        stages[i].classList.toggle("hidden");
+      } else {
+        stages[i].classList.add("hidden");
+      }
+    }
   }
   // code
 

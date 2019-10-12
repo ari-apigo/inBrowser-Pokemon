@@ -25,27 +25,27 @@ h2 {
   align-self: flex-start;
 }
 
-h2 span, p span, .speech {
+h1 span, h2 span, p span, .speech, figcaption span {
   border: solid 3px #FFFFFF;
   border-radius: 10%;
   padding: 10px;
   text-align: center;
 }
 
-p span, .speech {
-  background: #E0FEFC;
+h1 span, h2 span {
+  background: #EAFFB3;
+  font-family: "Dosis", sans-serif;
 }
 
-h2 span {
-  font-family: "Dosis", sans-serif;
-  background: #EAFFB3;
+p span, .speech, figcaption span {
+  background: #E0FEFC;
 }
 
 .hidden {
   display: none;
 }
 
-#home {
+.home {
   /* The following site was consulted:
     https://css-tricks.com/perfect-full-page-background-image/ */
   background: url("img/pallettown.jpg") center center fixed no-repeat;
@@ -57,10 +57,19 @@ h2 span {
   height: 100%;
 }
 
-.next {
+#next {
   width: 50px;
   height: 100%;
   align-self: flex-end;
   background: #FFFFFF;
   border-radius: 50%;
+}
+
+#pokeballs {
+  display: flex;
+}
+
+#pokeballs img {
+  width: 300px;
+  height: 300px;
 }

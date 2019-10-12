@@ -15,30 +15,34 @@
   </head>
   <body>
     <header>
-      <h1>PokéPortal</h1>
+      <h1><span>PokéPortal</span></h1>
     </header>
     <main>
       <section>
         <p><span>What if the Pokémon world was just a click away?</span></p>
         <button id="start">... is it?</button>
       </section>
-      <section id="home" class="hidden">
+      <section class="hidden">
         <article>
           <h2><span>Home</span></h2>
           <img id="professor" src="img/professoroak.png" alt="Professor Oak">
           <p class="speech">My name is Professor Oak. Welcome to the Pokemon World!
             If you're here to pick your first Pokémon, you're in luck! We imported starter
-            Pokémon from every region. However, more choices means you can't take a look at each
-            Pokémon! They're sorted out by type, though; go on! Take your pick.</p>
-          <img class="next" src="img/nextarrow.png" alt="Click to continue.">
+            Pokémon from every region.</p>
+          <img id="next" src="img/nextarrow.png" alt="Click to continue.">
+        </article>
+        <article class="hidden">
+          <h2><span>Pick a Pokémon</span></h2>
           <div id="pokeballs">
             <figure><img src="img/pokeball.png" alt="A Pokeball!">
-              <figcaption>Fire</figcaption></figure>
+              <figcaption><span>Fire</span></figcaption></figure>
             <figure><img src="img/pokeball.png" alt="A Pokeball!">
-              <figcaption>Grass</figcaption></figure>
+              <figcaption><span>Grass</span></figcaption></figure>
             <figure><img src="img/pokeball.png" alt="A Pokeball!">
-              <figcaption>Water</figcaption></figure>
+              <figcaption><span>Water</span></figcaption></figure>
           </div>
+          <p class="speech">However, more choices means you can't take a look at each
+          Pokémon! They're sorted out by type, though; go on! Take your pick.</p>
         </article>
       </section>
     </main>
