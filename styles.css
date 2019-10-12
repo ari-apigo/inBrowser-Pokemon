@@ -1,0 +1,66 @@
+/*
+  Name: Ariane Apigo
+  Date: 2019 October 11
+  Section: AA / Chao Hsu Lin & Austin Jenchi
+
+  This is the .
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:800&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+body {
+  background: #EAFFB3;
+  font-family: "Nunito", sans-serif;
+}
+
+body, article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  align-self: flex-start;
+}
+
+h2 span, p span, .speech {
+  border: solid 3px #FFFFFF;
+  border-radius: 10%;
+  padding: 10px;
+  text-align: center;
+}
+
+p span, .speech {
+  background: #E0FEFC;
+}
+
+h2 span {
+  font-family: "Dosis", sans-serif;
+  background: #EAFFB3;
+}
+
+.hidden {
+  display: none;
+}
+
+#home {
+  /* The following site was consulted:
+    https://css-tricks.com/perfect-full-page-background-image/ */
+  background: url("img/pallettown.jpg") center center fixed no-repeat;
+  background-size: cover;
+}
+
+#professor {
+  width: 200px;
+  height: 100%;
+}
+
+.next {
+  width: 50px;
+  height: 100%;
+  align-self: flex-end;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
