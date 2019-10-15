@@ -11,8 +11,11 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
 body {
-  background: #EAFFB3;
   font-family: "Nunito", sans-serif;
+}
+
+body, h1 span, h2 span {
+  background: #EAFFB3;
 }
 
 body, article {
@@ -39,7 +42,6 @@ h1 span, h2 span, p span, .speech, figcaption span, button {
 }
 
 h1 span, h2 span {
-  background: #EAFFB3;
   font-family: "Dosis", sans-serif;
 }
 
