@@ -10,10 +10,11 @@
 
   window.addEventListener("load", init);
 
-/* Function comment
+/*
+  Function comment
  */
   function init() {
-    let GENERATIONS = 7;
+    const GENERATIONS = 7;
     document.getElementById("start").addEventListener("click", start);
     document.getElementById("next").addEventListener("click", next);
     document.getElementById("fire").addEventListener("click", choose);
@@ -21,7 +22,8 @@
     document.getElementById("water").addEventListener("click", choose);
   }
 
-/* Function comment
+/*
+  Function comment
  */
   function start() {
     let portal = document.querySelectorAll("section");
@@ -36,7 +38,8 @@
     body.classList.add("home");
   }
 
-/* Function comment
+/*
+  Function comment
  */
   function next() {
     let stages = document.querySelectorAll("article");
@@ -49,19 +52,20 @@
     }
   }
 
-/* Function comment
+/*
+  Function comment
  */
   function choose() {
     let type = this.id;
     let ballDiv = document.getElementById("pokeballs");
     let chosenPoke = document.createElement("img");
-    if (type = "fire") {
+    if (type === "fire") {
       chosenPoke.src = fire();
       ballDiv.insertBefore(chosenPoke, ballDiv.firstChild);
       ballDiv.removeChild(ballDiv.children[1]);
       document.getElementById("grass").removeEventListener("click", choose);
       document.getElementById("water").removeEventListener("click", choose);
-    } else if (type = "grass") {
+    } else if (type === "grass") {
       chosenPoke.src = grass();
       ballDiv.insertBefore(chosenPoke, ballDiv.children[1]);
       ballDiv.removeChild(ballDiv.children[2]);
@@ -78,7 +82,8 @@
     endDialogue();
   }
 
-/* Function comment
+/*
+  Function comment
  */
   function fire() {
     let path = "img/fire/";
@@ -88,7 +93,8 @@
     return path + choices[chosenGen] + ".png";
   }
 
-/* Function comment
+/*
+  Function comment
  */
   function grass() {
     let path = "img/grass/";
@@ -98,7 +104,8 @@
     return path + choices[chosenGen] + ".png";
   }
 
-/* Function comment
+/*
+  Function comment
  */
   function water() {
     let path = "img/water/";
@@ -108,7 +115,8 @@
     return path + choices[chosenGen] + ".png";
   }
 
-/* Function comment
+/*
+  Function comment
  */
   function endDialogue() {
     let speechDialogues = document.querySelectorAll(".speech");
