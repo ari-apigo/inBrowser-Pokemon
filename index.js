@@ -6,7 +6,7 @@
 *  This is .
 */
 "use strict";
-(funtion() {
+(function() {
 
   window.addEventListener("load", init);
 
@@ -65,7 +65,8 @@
       document.getElementById("fire").removeEventListener("click", choose);
       document.getElementById("grass").removeEventListener("click", choose);
     }
-    chosenPoke.alt = "Your starter Pokémon!";
+    chosenPoke.alt = "Your starter Pokémon.";
+    endDialogue();
   }
 
   function fire() {
@@ -91,7 +92,17 @@
         "Popplio", "Squirtle", "Totodile"];
     return path + choices[chosenGen] + ".png";
   }
-  
+
+  function endDialogue() {
+    let speechDialogues = document.querySelectorAll(".speech");
+    for (let i=0; i<speechDialogues.length; i++) {
+      if (!speechDialogues[i].classList.contains("hidden")) {
+        speechDialogues[i].classList.add("hidden");
+      }
+    }
+    document.getElementById("endDialogue").classList.remove("hidden");
+  }
+
   // code
 
 })();

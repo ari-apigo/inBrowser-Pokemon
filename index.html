@@ -16,12 +16,12 @@
   <body>
     <header>
       <h1><span>PokéPortal</span></h1>
-      <p></p>
     </header>
     <main>
       <section>
-        <p><span>What if the Pokémon world was just a click away?</span></p>
-        <button id="start">... is it?</button>
+        <p><span>What if the Pokémon world was just a click away?
+          Which starter Pokémon would <em>you</em> choose?</span></p>
+        <div id="button"><button id="start">Find out!</button></div>
       </section>
       <section class="hidden">
         <article>
@@ -43,7 +43,10 @@
               <figcaption><span>Water</span></figcaption></figure>
           </div>
           <p class="speech">However, more choices means you can't take a look at each
-          Pokémon! They're sorted out by type, though; go on! Take your pick.</p>
+          Pokémon! They're sorted out by type, though; go on! Take your pick.
+            <em>Click on a Pokéball.</em></p>
+          <p id="endDialogue" class="hidden speech">Congratulations! You're ready to start your
+            Pokémon journey.</p>
         </article>
       </section>
     </main>

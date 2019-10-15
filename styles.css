@@ -21,11 +21,17 @@ body, article {
   align-items: center;
 }
 
+/* The following site was consulted:
+  https://stackoverflow.com/questions/3622756/button-center-css */
+#button {
+  text-align: center;
+}
+
 h2 {
   align-self: flex-start;
 }
 
-h1 span, h2 span, p span, .speech, figcaption span {
+h1 span, h2 span, p span, .speech, figcaption span, button {
   border: solid 3px #FFFFFF;
   border-radius: 10%;
   padding: 10px;
