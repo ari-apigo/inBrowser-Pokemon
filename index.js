@@ -1,12 +1,12 @@
 /*
-  Name: Ariane Apigo
-  Date: 2019 October 11
-  Section: AA / Chao Hsu Lin & Austin Jenchi
-
-  This is .
+*  Name: Ariane Apigo
+*  Date: 2019 October 11
+*  Section: AA / Chao Hsu Lin & Austin Jenchi
+*
+*  This is .
 */
 "use strict";
-// (funtion() {
+(funtion() {
 
   window.addEventListener("load", init);
 
@@ -91,6 +91,7 @@
         "Popplio", "Squirtle", "Totodile"];
     return path + choices[chosenGen] + ".png";
   }
+  
   // code
 
-// })();
+})();
