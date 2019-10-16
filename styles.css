@@ -57,7 +57,7 @@ p span, .speech, figcaption span {
 .home {
   /* The following site was consulted:
     https://css-tricks.com/perfect-full-page-background-image/ */
-  background: url("img/professoroaklab.jpg") center center fixed no-repeat;
+  background: url("img/professoroaklab.png") center center fixed no-repeat;
   /* "Professor Oak's Laboratory" from Alola, Kanto! (42nd episode of Pokémon Sun & Moon animated
       series) is licensed under fair use.
     https://bulbapedia.bulbagarden.net/wiki/File:Professor_Oaks_Laboratory.png */
