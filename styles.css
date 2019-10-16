@@ -19,27 +19,29 @@ body, h1 span, h2 span {
   background: #EAFFB3;
 }
 
-body, article {
+body, article, #pokeballs {
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-/* The following site was consulted:
-  https://stackoverflow.com/questions/3622756/button-center-css */
-#button {
-  text-align: center;
+body, article {
+  flex-direction: column;
+  align-items: center;
 }
 
 h2 {
   align-self: flex-start;
 }
 
-h1 span, h2 span, p span, .speech, figcaption span, button {
+/* The following site was consulted:
+  https://stackoverflow.com/questions/3622756/button-center-css */
+h1 span, h2 span, p span, .speech, figcaption span, #button {
+  text-align: center;
+}
+
+h1 span, h2 span, p span, .speech, figcaption span {
   border: solid 3px #FFFFFF;
   border-radius: 10%;
   padding: 10px;
-  text-align: center;
 }
 
 h1 span, h2 span {
@@ -66,19 +68,17 @@ p span, .speech, figcaption span {
 
 #professor {
   width: 200px;
-  height: 100%;
 }
 
 #next {
   width: 50px;
-  height: 100%;
   align-self: flex-end;
   background: #FFFFFF;
   border-radius: 50%;
 }
 
-#pokeballs {
-  display: flex;
+#professor, #next {
+  height: 100%;
 }
 
 #pokeballs img {
