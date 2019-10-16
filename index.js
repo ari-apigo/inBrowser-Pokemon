@@ -9,12 +9,11 @@
 (function() {
 
   window.addEventListener("load", init);
-
+  const GENERATIONS = 7;
   /*
-   * Function comment
+   * Sets up event-listeners on buttons and images.
    */
   function init() {
-    const GENERATIONS = 7;
     document.getElementById("start").addEventListener("click", start);
     document.getElementById("next").addEventListener("click", next);
     document.getElementById("fire").addEventListener("click", choose);
@@ -23,7 +22,7 @@
   }
 
   /*
-   * Function comment
+   * Changes view to first "stage;" starts the game / simulator.
    */
   function start() {
     let portal = document.querySelectorAll("section");
@@ -39,7 +38,8 @@
   }
 
   /*
-   * Function comment
+   * Changes the view to the next "stage;" continues the game / simulator.
+   * Note that this works because there are only two stages to the game / simulator.
    */
   function next() {
     let stages = document.querySelectorAll("article");
@@ -53,7 +53,8 @@
   }
 
   /*
-   * Function comment
+   * Chooses the user's starter Pokémon based on their type choice.
+   * Also shows the final dialogue of the game / simulator.
    */
   function choose() {
     let type = this.id;
@@ -83,7 +84,8 @@
   }
 
   /*
-   * Function comment
+   * Creates path to images of fire-type starter Pokémon and chooses one from a random generation.
+   * @returns {string} image path to random fire-type starter Pokémon
    */
   function fire() {
     let path = "img/fire/";
@@ -94,7 +96,8 @@
   }
 
   /*
-   * Function comment
+   * Creates path to images of grass-type starter Pokémon and chooses one from a random generation.
+   * @returns {string} image path to random grass-type starter Pokémon
    */
   function grass() {
     let path = "img/grass/";
@@ -105,7 +108,8 @@
   }
 
   /*
-   * Function comment
+   * Creates path to images of water-type starter Pokémon and chooses one from a random generation.
+   * @returns {string} image path to random water-type starter Pokémon
    */
   function water() {
     let path = "img/water/";
@@ -116,7 +120,7 @@
   }
 
   /*
-   * Function comment
+   * Shows the final dialogue of the game / simulator.
    */
   function endDialogue() {
     let speechDialogues = document.querySelectorAll(".speech");
