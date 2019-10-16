@@ -3,7 +3,8 @@
   Date: 2019 October 11
   Section: AA / Chao Hsu Lin & Austin Jenchi
 
-  This is the .
+  This is the styles.css file for my PokéPortal site. It is used to keep a consistent appearance
+  throughout the site.
 */
 
 @import url('https://fonts.googleapis.com/css?family=Dosis:800&display=swap');
@@ -56,7 +57,10 @@ p span, .speech, figcaption span {
 .home {
   /* The following site was consulted:
     https://css-tricks.com/perfect-full-page-background-image/ */
-  background: url("img/oaklabcrop.jpg") center center fixed no-repeat;
+  background: url("img/professoroaklab.jpg") center center fixed no-repeat;
+  /* "Professor Oak's Laboratory" from Alola, Kanto! (42nd episode of Pokémon Sun & Moon animated
+      series) is licensed under fair use.
+    https://bulbapedia.bulbagarden.net/wiki/File:Professor_Oaks_Laboratory.png */
   background-size: cover;
 }
 

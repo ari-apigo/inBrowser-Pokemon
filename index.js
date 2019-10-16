@@ -3,7 +3,10 @@
  *  Date: 2019 October 11
  *  Section: AA / Chao Hsu Lin & Austin Jenchi
  *
- *  This is .
+ *  This is the index.js file for my PokéPortal site. It enables the game / simulator to guide
+ *  the user through the experience of receiving their first Pokémon (a starter Pokémon).
+ *  All Pokémon photos were found at https://bulbapedia.bulbagarden.net/wiki/ and are licensed
+ *  under fair use.
  */
 "use strict";
 (function() {
