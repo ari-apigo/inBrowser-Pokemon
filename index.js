@@ -10,7 +10,8 @@
 
   window.addEventListener("load", init);
   const GENERATIONS = 7;
-  /*
+
+  /**
    * Sets up event-listeners on buttons and images.
    */
   function init() {
@@ -21,7 +22,7 @@
     document.getElementById("water").addEventListener("click", choose);
   }
 
-  /*
+  /**
    * Changes view to first "stage;" starts the game / simulator.
    */
   function start() {
@@ -37,7 +38,7 @@
     body.classList.add("home");
   }
 
-  /*
+  /**
    * Changes the view to the next "stage;" continues the game / simulator.
    * Note that this works because there are only two stages to the game / simulator.
    */
@@ -52,7 +53,7 @@
     }
   }
 
-  /*
+  /**
    * Chooses the user's starter Pokémon based on their type choice.
    * Also shows the final dialogue of the game / simulator.
    */
@@ -83,7 +84,7 @@
     endDialogue();
   }
 
-  /*
+  /**
    * Creates path to images of fire-type starter Pokémon and chooses one from a random generation.
    * @returns {string} image path to random fire-type starter Pokémon
    */
@@ -95,7 +96,7 @@
     return path + choices[chosenGen] + ".png";
   }
 
-  /*
+  /**
    * Creates path to images of grass-type starter Pokémon and chooses one from a random generation.
    * @returns {string} image path to random grass-type starter Pokémon
    */
@@ -107,7 +108,7 @@
     return path + choices[chosenGen] + ".png";
   }
 
-  /*
+  /**
    * Creates path to images of water-type starter Pokémon and chooses one from a random generation.
    * @returns {string} image path to random water-type starter Pokémon
    */
@@ -119,7 +120,7 @@
     return path + choices[chosenGen] + ".png";
   }
 
-  /*
+  /**
    * Shows the final dialogue of the game / simulator.
    */
   function endDialogue() {
