@@ -10,9 +10,9 @@
 
   window.addEventListener("load", init);
 
-/*
-  Function comment
- */
+  /*
+   * Function comment
+   */
   function init() {
     const GENERATIONS = 7;
     document.getElementById("start").addEventListener("click", start);
@@ -22,9 +22,9 @@
     document.getElementById("water").addEventListener("click", choose);
   }
 
-/*
-  Function comment
- */
+  /*
+   * Function comment
+   */
   function start() {
     let portal = document.querySelectorAll("section");
     for (let i = 0; i < portal.length; i++) {
@@ -38,9 +38,9 @@
     body.classList.add("home");
   }
 
-/*
-  Function comment
- */
+  /*
+   * Function comment
+   */
   function next() {
     let stages = document.querySelectorAll("article");
     for (let i = 0; i < stages.length; i++) {
@@ -52,9 +52,9 @@
     }
   }
 
-/*
-  Function comment
- */
+  /*
+   * Function comment
+   */
   function choose() {
     let type = this.id;
     let ballDiv = document.getElementById("pokeballs");
@@ -82,9 +82,9 @@
     endDialogue();
   }
 
-/*
-  Function comment
- */
+  /*
+   * Function comment
+   */
   function fire() {
     let path = "img/fire/";
     let chosenGen = Math.floor(Math.random() * GENERATIONS);
@@ -93,9 +93,9 @@
     return path + choices[chosenGen] + ".png";
   }
 
-/*
-  Function comment
- */
+  /*
+   * Function comment
+   */
   function grass() {
     let path = "img/grass/";
     let chosenGen = Math.floor(Math.random() * GENERATIONS);
@@ -104,9 +104,9 @@
     return path + choices[chosenGen] + ".png";
   }
 
-/*
-  Function comment
- */
+  /*
+   * Function comment
+   */
   function water() {
     let path = "img/water/";
     let chosenGen = Math.floor(Math.random() * GENERATIONS);
@@ -115,9 +115,9 @@
     return path + choices[chosenGen] + ".png";
   }
 
-/*
-  Function comment
- */
+  /*
+   * Function comment
+   */
   function endDialogue() {
     let speechDialogues = document.querySelectorAll(".speech");
     for (let i = 0; i < speechDialogues.length; i++) {
