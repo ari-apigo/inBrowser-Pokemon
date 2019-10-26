@@ -1,0 +1,87 @@
+/*
+  Name: Ariane Apigo
+  Date: 2019 October 11
+  Section: AA / Chao Hsu Lin & Austin Jenchi
+
+  This is the styles.css file for my PokéPortal site. It is used to keep a consistent appearance
+  throughout the site.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:800&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+body, h1 span, h2 span {
+  background: #EAFFB3;
+}
+
+body, article, #pokeballs {
+  display: flex;
+}
+
+body, article {
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  align-self: flex-start;
+}
+
+/* The following site was consulted:
+  https://stackoverflow.com/questions/3622756/button-center-css */
+h1 span, h2 span, p span, .speech, figcaption span, #button {
+  text-align: center;
+}
+
+h1 span, h2 span, p span, .speech, figcaption span {
+  border: solid 3px #FFFFFF;
+  border-radius: 10%;
+  padding: 10px;
+}
+
+h1 span, h2 span {
+  font-family: "Dosis", sans-serif;
+}
+
+p span, .speech, figcaption span {
+  background: #E0FEFC;
+}
+
+.hidden {
+  display: none;
+}
+
+.home {
+  /* The following site was consulted:
+    https://css-tricks.com/perfect-full-page-background-image/ */
+  background: url("img/professoroaklab.png") center center fixed no-repeat;
+  /* "Professor Oak's Laboratory" from Alola, Kanto! (42nd episode of Pokémon Sun & Moon animated
+      series) is licensed under fair use.
+    https://bulbapedia.bulbagarden.net/wiki/File:Professor_Oaks_Laboratory.png */
+  background-size: cover;
+}
+
+#professor {
+  width: 200px;
+}
+
+#next {
+  width: 50px;
+  align-self: flex-end;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+#professor, #next {
+  height: 100%;
+}
+
+#pokeballs img {
+  width: 300px;
+  height: 300px;
+}
