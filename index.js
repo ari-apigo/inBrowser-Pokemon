@@ -1,7 +1,6 @@
 /*
  *  Name: Ariane Apigo
  *  Date: 2019 October 11
- *  Section: AA / Chao Hsu Lin & Austin Jenchi
  *
  *  This is the index.js file for my PokéPortal site. It enables the game / simulator to guide
  *  the user through the experience of receiving their first Pokémon (a starter Pokémon).
