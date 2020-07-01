@@ -92,7 +92,7 @@
    * @returns {string} image path to random fire-type starter Pokémon
    */
   function fire() {
-    let path = "img/fire/";
+    let path = "img/Fire/";
     let chosenGen = Math.floor(Math.random() * GENERATIONS);
     let choices = ["Charmander", "Chimchar", "Cyndaquil", "Fennekin",
         "Litten", "Tepig", "Torchic"];
@@ -104,7 +104,7 @@
    * @returns {string} image path to random grass-type starter Pokémon
    */
   function grass() {
-    let path = "img/grass/";
+    let path = "img/Grass/";
     let chosenGen = Math.floor(Math.random() * GENERATIONS);
     let choices = ["Bulbasaur", "Chespin", "Chikorita", "Rowlet",
         "Snivy", "Treecko", "Turtwig"];
@@ -116,7 +116,7 @@
    * @returns {string} image path to random water-type starter Pokémon
    */
   function water() {
-    let path = "img/water/";
+    let path = "img/Water/";
     let chosenGen = Math.floor(Math.random() * GENERATIONS);
     let choices = ["Froakie", "Mudkip", "Oshawott", "Piplup",
         "Popplio", "Squirtle", "Totodile"];
